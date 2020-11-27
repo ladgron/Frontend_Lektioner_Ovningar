@@ -4,17 +4,51 @@ File: Exempel_05.html
 Author: LG
 Date: 2020-11-26
 -->
+
+<!--
+The <html> tag represents the root of an HTML document.
+The <html> tag is the container for all other HTML elements (except for the <!DOCTYPE> tag).
+Note: You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+-->
+<!--
+The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
+It must only appear once, at the top of the page (before any HTML tags).
+The <!DOCTYPE> declaration is not case sensitive.
+The <!DOCTYPE> declaration for HTML5 is: <!DOCTYPE html>
+-->
 <!DOCTYPE html>
 <html lang="sv">
+<!--
+HTML attributes provide additional information about HTML elements.
+All HTML elements can have attributes
+Attributes provide additional information about elements.
+Attributes are always specified in the start tag.
+Attributes usually come in name/value pairs like: name="value"
+-->
 
+<!--
+An HTML element is defined by a start tag, some content, and an end tag:
+<tagname>Content goes here...</tagname>
+The HTML element is everything from the start tag to the end tag:
+<h1>My First Heading</h1>
+-->
 <head>
     <meta charset="UTF-8">
     <title>Exempel 5</title>
 </head>
 
+<!--The <body> element defines the document's body. It has a start tag <body> and an end tag </body>.
+The <h1> element defines a heading.
+The <p> element defines a paragraph.
+-->
 <body>
 
     <h1>Textformatering</h1>
+
+    <!--
+    Examples of non-semantic elements (Fysiska taggar): <div> and <span> - Tells nothing about its content.
+    -->
+
     <h2>Fysiska taggar</h2>
     <b>Fet</b> <br>
     <i>Kursiv</i> <br>
@@ -35,9 +69,20 @@ Date: 2020-11-26
     </p>
 
     <h3>Semantiska taggar</h3>
+    <!--
+    Semantic elements = elements with a meaning.
+    A semantic element clearly describes its meaning to both the browser and the developer.
+    Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+    -->
     <strong>Skriv viktig info i en strong-tagg.</strong> <br>
+    
+    <!--
+    The <em> tag is used to define emphasized text. The content inside is typically displayed in italic.
+    A screen reader will pronounce the words in <em> with an emphasis, using verbal stress.
+    -->
     <em>Betoning på ord eller text.</em>
-
+    <p>You <em>have</em> to hurry up!</p>
+    <p>We <em>cannot</em> live like this.</p>
 
     <h4>Teckenkoder (HTML Entities)</h4>
     Copyright &copy; 2020 <br>
@@ -45,7 +90,12 @@ Date: 2020-11-26
 
     This flower is <del>blue</del> red. <br>
 
-
+    
+    <!--
+    HTML elements with no content are called empty elements.
+    The <br> tag inserts a single line break. The <br> tag is useful for writing addresses or poems. 
+    The <br> tag is an empty tag which means that it has no end tag.
+    -->
     <br><br><br><br><br><br>
 
 </body>
