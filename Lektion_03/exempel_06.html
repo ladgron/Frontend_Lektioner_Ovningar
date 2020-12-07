@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Exempel 6</title>
+
+<!--
+    texten kommer att visas i teal färg för att teal är intern styl och röd färg i exempel_06.css är en extern style. br
+    intern style har prioritet är externa style.
+-->
+
+<link rel="stylesheet" href="exempel_06.css">
+
+<style>
+    body {
+        color:teal;
+    }
+</style>
+
+</head>
+<body>
+  
+    <h1>CSS - Exempel 6</h1>
+    <h2>Lite om Cascading (kaskaden)</h2>
+
+<!--
+    inline style har högsta prioritet.
+    så texten undan kommer att vara i den färg som har skrivits inline:saddlebrown
+-->
+
+    <p style= color:saddlebrown;> <b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos recusandae delectus deleniti iusto amet. Quia quaerat, praesentium ab eos culpa officia explicabo pariatur labore error eveniet itaque nemo rem laboriosam?
+
+    </b></p>
+
+</body>
+</html>

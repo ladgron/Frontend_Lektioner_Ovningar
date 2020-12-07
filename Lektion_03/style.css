@@ -1,0 +1,16 @@
+/*
+man kan skriva kommentarer såhär i css-filen.
+Kurs:Kvalit20-Frontend
+Lektion: 3
+Författare: LG
+Date: 2020-12-02
+*/
+
+
+/*
+    En css-Regel
+*/
+
+body{
+    color: red; 
+}
