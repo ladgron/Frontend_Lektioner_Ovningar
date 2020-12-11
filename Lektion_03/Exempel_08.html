@@ -5,24 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS - Exempel 8</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lobster&family=Open+Sans:ital@1&display=swap" rel="stylesheet">
 
 
+<!-- när vi jobbar med en font family, vi ger 3 alternetiv. 
+  om webläsaren har problem att visa texten med första font ( exempel i h1: Georgia), 
+  det försöker visa texten in den andra font (exempel i h1: Times new roman),
+  och i slut, om ingen av fontar funkade, webläsaren visar texten i den tredje font.
+
+
+!! när font namnet mer än ett ord, man måste använda '' . exempel: 'Times New Roman'
+!! standard font size för webbläsaren är 16px.
+om vi ändrar inte font storleck manuellt, det kommer att vara i den storleck.
+[font size:3em] betyder 3*16 (som är standard font storleck)
+  -->
+
 <style>
 body {
-    font-family: Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
-h1 {
+
+h1,h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .signature {
-    font-family: 'lobster', cursive;
+    font-family: lobster, cursive;
     font-size: 80px;
     font-weight: bold;
 
@@ -34,30 +48,17 @@ h1 {
     text-align: right;
 }
 
+.signature3 {
+    font-family: 'Dancing script', cursive;
+    font-size: 3em;
+    text-align: right;
+}
+
 h2 {
 font-family: 'Comic Sans MS';
 }
 
 
-/* unvisited link */
-a:link {
-  color: red;
-}
-
-/* visited link */
-a:visited {
-  color: green;
-}
-
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-a:active {
-  color: blue;
-}
 
 </style>
 
@@ -65,12 +66,17 @@ a:active {
 <body>
     
 <h1>CSS - Exempel 8</h1>
-<h2>teckensnitt i CSS</h2>
+<h2>Teckensnitt i CSS</h2>
+<h3>Prova font</h3>
 
 <h2>Ladan G</h2>
 
 <p class="signature">Ladan Grönkvist</p> <br>
 <p class="signature2">Ladan Grönkvist</p>
+<p class="signature3">Ladan Grönkvist</p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum aliquam ipsam quibusdam debitis. Maiores modi libero nulla quam, eligendi ut debitis dolorem blanditiis distinctio porro, dignissimos aut inventore quidem asperiores!</p>
+
 
 <a href="http://www.W3schools.com">W3schools</a> <br>
 

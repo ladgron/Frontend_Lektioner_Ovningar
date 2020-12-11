@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Exempel 10</title>
+
+<!--
+med div som beskrev i style (nedan), får vi en box med bestämd bredd och höjd i webläsaren.
+div har ingen margin. så om vi har två div i body, de kommer att visas en efter den annan.
+vi måste lägg till margin och margin beredd om vi vill seperera två div.
+vi kan använda padding att få lite margin inuti boxen.
+egenskaper som width, height, margin, padding, border används mycket i samband med boxmodellen.
+-->
+
+<style>
+div {
+    width: 300px;
+    height: 500px;
+    margin: 20px;
+    padding: 10px;
+    border: 5px solid red; 
+    background-color: black;
+    color: white;
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>CSS - Exempel 10</h1>
+<h2>Boxmodellen</h2>
+
+<div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Harum ab veritatis velit minus illum minima exercitationem quisquam voluptatum
+    id iure qui expedita facilis inventore, eveniet ipsam eum sapiente. Modi, fuga!
+</div>
+
+<div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Harum ab veritatis velit minus illum minima exercitationem quisquam voluptatum
+    id iure qui expedita facilis inventore, eveniet ipsam eum sapiente. Modi, fuga!
+</div>
+
+</body>
+</html>
